@@ -37,6 +37,26 @@ macOS 安装包同时支持 Apple Silicon 与 Intel Mac。
 - 内置本地 Gateway，为 API Key 模式提供精确 Token 统计。
 - Universal Binary：同时支持 `arm64` 与 `x86_64`。
 
+## 功能预览
+
+### 菜单栏额度
+
+菜单栏使用紧凑进度条展示 `5h / 7d` 剩余额度。没有有效客户端时显示“未连接”。
+
+![Donvis 菜单栏额度](Resources/Screenshots/menu-bar.png)
+
+### 额度详情
+
+点击菜单栏图标后，可以查看当前客户端、登录账号、共享额度、重置时间和更新时间。
+
+<img src="Resources/Screenshots/quota-popover.png" alt="Donvis 额度详情弹窗" width="390">
+
+### 设置与客户端接入
+
+设置页提供自动监控、通知、客户端接入和本地 Gateway 配置入口。
+
+<img src="Resources/Screenshots/settings.png" alt="Donvis 设置页" width="390">
+
 ## 客户端说明
 
 ### Codex
