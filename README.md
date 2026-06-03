@@ -1,155 +1,77 @@
 # Donvis
 
-Donvis 是一款面向 Codex 与 Claude Code 用户的本地额度监控工具。macOS 版本以菜单栏应用运行，可识别当前活动客户端并展示账号级 `5h / 7d` 剩余额度。
+Donvis 是一款面向 Codex 与 Claude Code 用户的本地额度监控工具。它以 macOS 菜单栏应用运行，自动识别当前活动的官方客户端，并展示账号级 `5h / 7d` 剩余额度。
+
+当前版本：`V1.2.0`
 
 ## 下载
 
-当前稳定版本：`V1.1.0`
+- Apple Silicon：[Donvis-1.2.0-macOS-arm64.dmg](macOS/Donvis-1.2.0-macOS-arm64.dmg)
+- Intel Mac：[Donvis-1.2.0-macOS-x86_64.dmg](macOS/Donvis-1.2.0-macOS-x86_64.dmg)
+- Windows：暂未发布，后续版本会放入 [`Windows/`](Windows/)
 
-- Apple Silicon：[Donvis-1.1.0-macOS-arm64.dmg](macOS/Donvis-1.1.0-macOS-arm64.dmg)
-- Intel Mac：[Donvis-1.1.0-macOS-x86_64.dmg](macOS/Donvis-1.1.0-macOS-x86_64.dmg)
-- Windows：尚未发布，后续文件将放入 [`Windows/`](Windows/)
+请选择与你的 Mac 芯片一致的安装包。两个版本功能相同，但分别只包含对应架构。
 
-请选择与你的 Mac 芯片一致的安装包。两个版本功能相同，但安装包仅包含对应架构。
+## 功能亮点
 
-## 安装
-
-1. 下载并打开 DMG。
-2. 将 `Donvis.app` 拖入“应用程序”目录。
-3. 从“应用程序”目录启动 Donvis。
-
-当前公开安装包使用 ad-hoc 签名，尚未经过 Apple Developer ID 公证。首次启动时，如果 macOS 阻止打开：
-
-1. 打开“系统设置”。
-2. 进入“隐私与安全性”。
-3. 在安全性区域找到 Donvis 提示。
-4. 点击“仍要打开”。
-
-也可以在 Finder 中右键点击 `Donvis.app`，选择“打开”并确认。
-
-## 功能
-
-- 自动识别 Codex Desktop、Codex CLI 和 VSCode 官方 Codex 扩展。
-- 识别 Claude Code CLI，并通过官方 `statusLine` 桥接获取额度。
+- 自动识别 Codex App、Codex CLI、Codex VSCode 官方扩展。
+- 支持 Claude Code CLI 额度展示。
 - 菜单栏展示账号级 `5h / 7d` 剩余额度。
-- 多客户端同时在线时分别展示卡片，并明确共享账号额度。
-- 无有效客户端时，菜单栏显示“未连接”。
-- 支持 VSCode、Cursor、Trae 和 JetBrains 客户端接入检测。
-- 内置本地 Gateway，为 API Key 模式提供精确 Token 统计。
-- Apple Silicon 与 Intel 使用独立安装包，减少下载体积。
-- 默认显示 Dock 图标；菜单栏拥挤时仍可从 Dock 打开状态窗口。
-- 工具栏按在线官方客户端轮播展示 Donvis 图标、客户端名称和账号级额度。
-- Codex App、Codex CLI、Codex VSCode 与 Claude Code 客户端可以进入同一轮询序列。
-- 主屏与副屏点击工具栏均使用一致的原生 Popover 样式。
-- Dock 打开的状态窗口会在当前屏幕居中，并从首页开始展示。
+- 多客户端同时在线时，按客户端轮播展示。
+- 支持 3D 上下翻页式工具栏切换动画。
+- Dock 入口可作为菜单栏拥挤时的备用入口。
+- 支持主屏、副屏一致的菜单栏弹窗体验。
+- 内置本地 Gateway，用于 API Key 模式下的精确 Token 统计。
+- 不读取 IDE 中的 API Key 明文，不保存 Prompt、响应正文、代码或文件内容。
 
-## 功能预览
+## 功能展示
 
-### 菜单栏额度
+### 菜单栏额度轮播
 
-菜单栏使用紧凑进度条展示 `5h / 7d` 剩余额度。没有有效客户端时显示“未连接”。
+Donvis 会在菜单栏展示当前客户端名称，以及账号级 `5h / 7d` 剩余额度。多个客户端在线时会自动轮播。
 
-![Donvis 菜单栏额度](Resources/Screenshots/menu-bar.png)
+![Donvis 菜单栏额度轮播](macOS/screenshots/menu-bar-v120.png)
 
-### 额度详情
+### 客户端识别
 
-点击菜单栏图标后，可以查看当前客户端、登录账号、共享额度、重置时间和更新时间。
+Donvis 可以区分不同接入来源，例如：
 
-<img src="Resources/Screenshots/quota-popover.png" alt="Donvis 额度详情弹窗" width="390">
+- Codex App
+- Codex CLI
+- Codex VSCode
+- Claude Code CLI
 
-### 设置与客户端接入
+同一账号在多个客户端登录时，Donvis 会明确展示这些客户端共享同一个账号额度，避免误认为存在多套独立配额。
 
-设置页提供自动监控、通知、客户端接入和本地 Gateway 配置入口。
+### Dock 状态窗口
 
-<img src="Resources/Screenshots/settings.png" alt="Donvis 设置页" width="390">
+当菜单栏图标因系统空间不足被隐藏时，可以通过 Dock 图标打开 Donvis 状态窗口。窗口会展示当前额度、账号信息、来源说明和设置入口。
 
-## 客户端说明
+### 本地 Gateway
 
-### Codex
-
-Donvis 使用官方 `codex app-server` RPC 读取登录账号和额度：
-
-- `account/read`
-- `account/rateLimits/read`
-
-Codex Desktop、Codex CLI 和 VSCode 官方扩展共享同一账号时，会显示相同账号额度，不会误标为多套独立配额。
-
-### Claude Code
-
-Donvis 使用 Claude Code 官方 `statusLine` 能力，不调用 Claude Desktop 私有接口。桥接缓存位于：
-
-```text
-~/Library/Application Support/Donvis/claude-statusline.json
-```
-
-如果仅运行 Claude Desktop、尚未产生 Claude Code 会话响应，Donvis 会提示需要在 Claude Code 会话中更新额度。
-
-## IDE 与 Gateway
-
-Donvis 内置 Gateway，固定监听：
+Donvis 内置本地 Gateway，固定监听本机回环地址：
 
 ```text
 127.0.0.1:4099
 ```
 
-支持端点：
-
-- `GET /health`
-- `GET /v1/models`
-- `POST /v1/chat/completions`
-- `POST /v1/responses`
-- `POST /v1/messages`
-
-API Key 模式客户端可以将 Base URL 配置为 `http://127.0.0.1:4099/v1`，并使用 Donvis 生成的 Local Key。真实上游 API Key 仅写入 macOS Keychain。
+API Key 模式客户端可以通过 Gateway 转发请求并记录最小化 usage event。Donvis 不保存 Prompt、响应正文、代码、文件内容或任何 API Key。
 
 ## 隐私
 
 - 不抓取网页 Cookie。
 - 不读取 IDE 中的 API Key 明文。
-- 不保存 Prompt、响应正文、代码或文件内容。
 - 不上传额度、账号或本地配置。
-- Gateway 仅监听本机回环地址。
-- Gateway 默认只记录模型、端点、Provider、客户端、请求 ID、Token 数、状态码、耗时、限流响应头和时间戳。
+- 不保存 Prompt、响应正文、代码或文件内容。
+- Gateway 仅监听 `127.0.0.1`。
+- 真实上游 API Key 仅写入 macOS Keychain。
 
 ## 系统要求
 
 - macOS 13 Ventura 或更高版本。
 - Apple Silicon 或 Intel Mac。
-- 使用 Codex 时，需要安装 Codex Desktop、Codex CLI 或 VSCode 官方扩展。
+- 使用 Codex 时，需要安装 Codex App、Codex CLI 或 VSCode 官方 Codex 扩展。
 - 使用 Claude Code 时，需要安装 Claude Code CLI。
-
-## 从源码构建
-
-开发环境需要 Swift 5.9 或更高版本：
-
-```bash
-swift build
-Scripts/package_distribution.sh
-```
-
-构建结果：
-
-```text
-build/arm64/Donvis.app
-build/x86_64/Donvis.app
-dist/Donvis-1.1.0-macOS-arm64.dmg
-dist/Donvis-1.1.0-macOS-x86_64.dmg
-```
-
-验证独立架构：
-
-```bash
-file build/arm64/Donvis.app/Contents/MacOS/Donvis
-file build/x86_64/Donvis.app/Contents/MacOS/Donvis
-```
-
-仅安装 Command Line Tools 的环境可能缺少 `XCTest` 模块。完整测试建议使用完整 Xcode 工具链。
-
-## 仓库结构
-
-- [`macOS/`](macOS/)：macOS 安装包。
-- [`Windows/`](Windows/)：预留 Windows 安装包目录。
-- [`Packages/`](Packages/)：发布包说明。GitHub Packages 注册表将在提供对应包格式后启用。
 
 ## License
 
