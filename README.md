@@ -43,13 +43,13 @@
 
 ### 🔁 工具栏智能轮播
 
-<p align="center"><img src="macOS/screenshots/toolbar.gif" width="760" alt="工具栏智能轮播"></p>
+<p align="center"><img src="assets/toolbar.gif" width="580" alt="工具栏智能轮播"></p>
 
 菜单栏标题会在所有在线客户端之间**自动轮播切换**——`Claude Code CLI`、`Codex VSCode`、`Claude Desktop`、`Codex CLI`……每个都直接带上 `5h / 7d` 进度条与百分比，切换时配有 3D 上下翻页动画。你也可以在设置里改成只固定看某一个，或手动切换。
 
 ### 🪟 一键弹窗总览
 
-<p align="center"><img src="macOS/screenshots/popover.gif" width="380" alt="一键弹窗总览"></p>
+<p align="center"><img src="assets/popover.gif" width="630" alt="一键弹窗总览"></p>
 
 点击菜单栏图标，弹出**卡片式总览**，一屏看全所有信息：
 
@@ -62,7 +62,7 @@
 
 ### ⚙️ 灵活设置
 
-<p align="center"><img src="macOS/screenshots/settings.gif" width="480" alt="灵活设置"></p>
+<p align="center"><img src="assets/settings.gif" width="630" alt="灵活设置"></p>
 
 在设置里按自己的习惯调整展示方式：
 
@@ -74,7 +74,7 @@
 
 ### 🧰 Dock 备用入口
 
-<p align="center"><img src="macOS/screenshots/dock.gif" width="640" alt="Dock 备用入口"></p>
+<p align="center"><img src="assets/dock.gif" width="100%" alt="Dock 备用入口"></p>
 
 当菜单栏图标因系统空间不足被隐藏时，可直接从 **Dock 图标**打开同款状态窗口，展示当前额度、账号信息、来源说明与设置入口，信息与菜单栏完全一致。
 
