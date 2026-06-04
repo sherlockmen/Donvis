@@ -2,7 +2,7 @@
 
 <p><img src="assets/icon.png" width="96" alt="Donvis"></p>
 
-<h1>Donvis</h1>
+<h1>Donvis · 驴维斯</h1>
 
 <p><b>一眼看清 Codex 与 Claude Code 的账号额度</b></p>
 
