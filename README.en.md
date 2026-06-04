@@ -39,6 +39,37 @@ No more opening web dashboards, typing commands, or sending a throwaway message 
 - **🪟 Dock fallback** — If macOS hides the menu-bar icon for space, open the same status window from the Dock.
 - **🖥 Consistent across displays** — The popup looks and behaves the same on your main and secondary screens.
 
+## 🎬 Feature Tour
+
+### 🔁 Smart menu-bar rotation
+
+The menu-bar title **rotates automatically** across every online client — `Claude Code CLI`, `Codex VSCode`, `Claude Desktop`, `Codex CLI`, and so on — each shown with its own `5h / 7d` progress bars and percentages, with a 3D page-flip animation between them. Prefer a fixed view? Pin it to a single client or switch manually in Settings.
+
+### 🪟 One-click overview popup
+
+Click the menu-bar icon for a **card-style overview** that shows everything at once:
+
+- Current client name and connection status (connected / waiting)
+- Source label (account login · official client / VSCode extension), account email, subscription tier
+- A "shared quota" note when multiple clients use the same account
+- `5-hour` and `7-day` remaining percentages, reset times, and last-updated time
+- Codex and Claude clients grouped separately, never interleaved
+- Quick actions at the bottom: Refresh / Settings / Quit
+
+### ⚙️ Flexible settings
+
+Tune the display to your workflow:
+
+- **Display mode**: Auto / Codex only / Claude only / multi-client rotation
+- **Rotation interval**: customize how fast the menu-bar title cycles
+- **Launch at login**: start automatically when you sign in
+- **Low-quota alerts**: get a system notification when remaining quota runs low
+- Menu-bar style and display preferences
+
+### 🧰 Dock fallback entry
+
+When macOS hides the menu-bar icon for lack of space, open the same status window straight from the **Dock icon** — current quota, account info, source, and settings, identical to the menu-bar popup.
+
 ## 🔒 Privacy first
 
 Donvis only reads the minimum needed to display your quota, and **never touches your code or conversations**:
@@ -64,12 +95,6 @@ Pick the installer matching your Mac's chip — both builds are functionally ide
 3. Alternatively, run `xattr -dr com.apple.quarantine /Applications/Donvis.app` in Terminal, then launch.
 
 > A Windows build is not yet available; it will land in [`Windows/`](Windows/) in a future release.
-
-## 🖼 Screenshots
-
-Donvis shows the current client name and account-level `5h / 7d` remaining quota in the menu bar, rotating automatically when multiple clients are online.
-
-![Donvis menu bar usage](macOS/screenshots/menu-bar-v120.png)
 
 ## 💻 Requirements
 
