@@ -43,9 +43,13 @@ No more opening web dashboards, typing commands, or sending a throwaway message 
 
 ### 🔁 Smart menu-bar rotation
 
+<p align="center"><img src="macOS/screenshots/toolbar.gif" width="760" alt="Smart menu-bar rotation"></p>
+
 The menu-bar title **rotates automatically** across every online client — `Claude Code CLI`, `Codex VSCode`, `Claude Desktop`, `Codex CLI`, and so on — each shown with its own `5h / 7d` progress bars and percentages, with a 3D page-flip animation between them. Prefer a fixed view? Pin it to a single client or switch manually in Settings.
 
 ### 🪟 One-click overview popup
+
+<p align="center"><img src="macOS/screenshots/popover.gif" width="380" alt="One-click overview popup"></p>
 
 Click the menu-bar icon for a **card-style overview** that shows everything at once:
 
@@ -58,6 +62,8 @@ Click the menu-bar icon for a **card-style overview** that shows everything at o
 
 ### ⚙️ Flexible settings
 
+<p align="center"><img src="macOS/screenshots/settings.gif" width="480" alt="Flexible settings"></p>
+
 Tune the display to your workflow:
 
 - **Display mode**: Auto / Codex only / Claude only / multi-client rotation
@@ -67,6 +73,8 @@ Tune the display to your workflow:
 - Menu-bar style and display preferences
 
 ### 🧰 Dock fallback entry
+
+<p align="center"><img src="macOS/screenshots/dock.gif" width="640" alt="Dock fallback entry"></p>
 
 When macOS hides the menu-bar icon for lack of space, open the same status window straight from the **Dock icon** — current quota, account info, source, and settings, identical to the menu-bar popup.
 
