@@ -12,7 +12,7 @@
   <img alt="platform" src="https://img.shields.io/badge/platform-macOS%2013%2B-black">
   <img alt="arch" src="https://img.shields.io/badge/arch-Apple%20Silicon%20%7C%20Intel-blue">
   <img alt="providers" src="https://img.shields.io/badge/providers-Codex%20%7C%20Claude%20Code-orange">
-  <img alt="version" src="https://img.shields.io/badge/version-1.4.0-brightgreen">
+  <img alt="version" src="https://img.shields.io/badge/version-1.7.0-brightgreen">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-lightgrey">
 </p>
 
@@ -36,6 +36,8 @@ No more opening web dashboards, typing commands, or sending a throwaway message 
 - **👥 Shared-account merging** — When one account is signed in across multiple clients, Donvis clearly labels it as a shared quota instead of pretending there are several separate allowances.
 - **🗂 Clean grouped ordering** — Codex clients and Claude clients are grouped together, with the one you're actively using floating to the top.
 - **🔁 Multi-client rotation** — When several clients are online, the menu-bar title rotates between them with a 3D page-flip animation.
+- **🔄 Real Claude manual refresh** — Clicking Refresh bypasses the local cache and requests Claude Code account usage directly; if the service returns no fresh quota, Donvis keeps the last valid reading and tells you why.
+- **🛡 Safe Claude data source** — Donvis does not scrape Claude Desktop cookies or reverse-engineer private web sessions; it only uses the local Claude Code credential path and the official statusLine bridge.
 - **🪟 Dock fallback** — If macOS hides the menu-bar icon for space, open the same status window from the Dock.
 - **🖥 Consistent across displays** — The popup looks and behaves the same on your main and secondary screens.
 
@@ -57,6 +59,7 @@ Click the menu-bar icon for a **card-style overview** that shows everything at o
 - Source label (account login · official client / VSCode extension), account email, subscription tier
 - A "shared quota" note when multiple clients use the same account
 - `5-hour` and `7-day` remaining percentages, reset times, and last-updated time
+- A clear warning when Claude does not return fresh usage and Donvis is showing the last valid reading
 - Codex and Claude clients grouped separately, never interleaved
 - Quick actions at the bottom: Refresh / Settings / Quit
 
@@ -83,6 +86,7 @@ When macOS hides the menu-bar icon for lack of space, open the same status windo
 Donvis only reads the minimum needed to display your quota, and **never touches your code or conversations**:
 
 - Does not scrape web cookies.
+- Does not scrape Claude Desktop cookies or inject into private web sessions.
 - Does not read plaintext API keys from your IDE.
 - Does not upload any quota, account, or local configuration data.
 - Does not store prompts, model responses, code, or file contents.
@@ -91,8 +95,8 @@ Donvis only reads the minimum needed to display your quota, and **never touches 
 
 | Chip | Installer |
 | --- | --- |
-| Apple Silicon (M-series) | [Donvis-1.4.0-macOS-arm64.dmg](macOS/Donvis-1.4.0-macOS-arm64.dmg) |
-| Intel Mac | [Donvis-1.4.0-macOS-x86_64.dmg](macOS/Donvis-1.4.0-macOS-x86_64.dmg) |
+| Apple Silicon (M-series) | [Donvis-1.7.0-macOS-arm64.dmg](macOS/Donvis-1.7.0-macOS-arm64.dmg) |
+| Intel Mac | [Donvis-1.7.0-macOS-x86_64.dmg](macOS/Donvis-1.7.0-macOS-x86_64.dmg) |
 
 Pick the installer matching your Mac's chip — both builds are functionally identical.
 
