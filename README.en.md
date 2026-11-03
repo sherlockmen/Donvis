@@ -9,12 +9,12 @@
 <p>Check quota in the menu bar. Explore sessions, child agents, and token usage in the desktop workspace.<br>Know what is left before you start, and where the work went when you finish.</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
 </p>
 
-<p>v3.2.18 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.18">Release notes and checksums</a></p>
+<p>v3.2.19 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.19">Release notes and checksums</a></p>
 
 <p><a href="README.md">简体中文</a> · <strong>English</strong></p>
 

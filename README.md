@@ -9,12 +9,12 @@
 <p>在菜单栏看剩余额度，在桌面工作台看会话、子 Agent 和 Token 去向。<br>从开工前的额度检查，到收工后的用量回顾，都有迹可循。</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
 </p>
 
-<p>v3.2.18 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.18">发行说明与校验值</a></p>
+<p>v3.2.19 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.19">发行说明与校验值</a></p>
 
 <p><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 
