@@ -1,120 +1,141 @@
 <div align="center">
 
-<p><img src="assets/icon.png" width="96" alt="Donvis"></p>
+<img src="assets/icon.png" width="88" alt="Donvis app icon">
 
 <h1>Donvis</h1>
 
-<p><b>See your Codex & Claude Code account usage at a glance</b></p>
+<p><strong>See your remaining Codex quota and understand what your agents are doing.</strong></p>
 
-<p>Lives in the macOS menu bar, automatically detects the official client you're using, and shows your account-level <code>5-hour / 7-day</code> remaining quota in real time.</p>
+<p>Check quota in the menu bar. Explore sessions, child agents, and token usage in the desktop workspace.<br>Know what is left before you start, and where the work went when you finish.</p>
 
 <p>
-  <img alt="platform" src="https://img.shields.io/badge/platform-macOS%2013%2B-black">
-  <img alt="arch" src="https://img.shields.io/badge/arch-Apple%20Silicon%20%7C%20Intel-blue">
-  <img alt="providers" src="https://img.shields.io/badge/providers-Codex%20%7C%20Claude%20Code-orange">
-  <img alt="version" src="https://img.shields.io/badge/version-1.7.0-brightgreen">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-lightgrey">
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.18/Donvis-3.2.18-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
 </p>
 
-<p><a href="README.md">简体中文</a> · <b>English</b></p>
+<p>v3.2.18 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.18">Release notes and checksums</a></p>
+
+<p><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
 </div>
 
----
+![Donvis 3.2.18 overview with Codex quota, account resources, and daily usage](assets/v3.2.18/overview.png)
 
-## ✨ What is it
+> Captured from the running macOS app using real local records. Identifying details are redacted; usage values are unchanged and reflect the time of capture. Account resources depend on what the service returns.
 
-**Donvis** is a local usage monitor built for **Codex** and **Claude Code** users.
+[Get started](#get-started) · [Feature tour](#feature-tour) · [Data and privacy](#data-and-privacy) · [FAQ](#faq)
 
-No more opening web dashboards, typing commands, or sending a throwaway message first — just open the menu bar and **whichever client you're using shows up with its remaining quota**. Clean and direct.
+## Before, during, and after the task
 
-## 🚀 Key Features
+- **Before you start, check the allowance:** See remaining quota, reset times, and the last update. Clients signed in to the same account share one allowance.
+- **While agents work, follow the split:** Inspect main sessions and child agents, including models, reasoning effort, tools, recognized `SKILL.md` reads, and token usage.
+- **After the task, review the usage:** Filter local records by date, model, project, or session. Separate input, output, and cache reads, then export JSON or CSV.
+- **Across a busy day, watch the pace:** Compare quota history, recent consumption, and the reset window to plan the next stretch of work.
+- **Over time, see the working pattern:** Explore the working-time calendar and performance recorded in local logs, with main-session usage distinct from child-agent totals.
 
-- **🔌 Instant display** — Open it and your current quota is right there. No need to send a message first, no manual trigger — the same experience as the official clients.
-- **🧭 Smart client detection** — Automatically distinguishes Codex Desktop, Codex CLI, the Codex VSCode extension, Claude Desktop, and Claude Code CLI. **Whatever is open shows up; close it and it disappears.**
-- **📊 Account-level 5h / 7d dual windows** — Shows remaining percentage and reset time for both the 5-hour session window and the 7-day rolling window, so you're never caught off guard.
-- **👥 Shared-account merging** — When one account is signed in across multiple clients, Donvis clearly labels it as a shared quota instead of pretending there are several separate allowances.
-- **🗂 Clean grouped ordering** — Codex clients and Claude clients are grouped together, with the one you're actively using floating to the top.
-- **🔁 Multi-client rotation** — When several clients are online, the menu-bar title rotates between them with a 3D page-flip animation.
-- **🔄 Real Claude manual refresh** — Clicking Refresh bypasses the local cache and requests Claude Code account usage directly; if the service returns no fresh quota, Donvis keeps the last valid reading and tells you why.
-- **🛡 Safe Claude data source** — Donvis does not scrape Claude Desktop cookies or reverse-engineer private web sessions; it only uses the local Claude Code credential path and the official statusLine bridge.
-- **🪟 Dock fallback** — If macOS hides the menu-bar icon for space, open the same status window from the Dock.
-- **🖥 Consistent across displays** — The popup looks and behaves the same on your main and secondary screens.
+The support guidance and examples in this release focus on **Codex**. Other service integrations are still being tuned and are not recommended as supported features in this release.
 
-## 🎬 Feature Tour
+## Get started
 
-### 🔁 Smart menu-bar rotation
+1. **Install Donvis.** Download the DMG for your Mac’s chip, open it, and drag `Donvis.app` into Applications.
+2. **Sign in to Codex Desktop or Codex CLI.** Install and sign in to either client before starting Donvis. The connected-tools view also shows detection of Codex Desktop, Codex CLI, and the official VS Code extension; quota access depends on the Desktop or CLI setup.
+3. **Start with the overview.** Check quota from the menu bar and open the main window for detailed statistics. Adjust low-quota alerts, display preferences, and global shortcuts in Settings.
 
-<p align="center"><img src="assets/toolbar.gif" width="580" alt="Smart menu-bar rotation"></p>
+**First launch:** This release uses an ad-hoc signature and has not been notarized by Apple. If macOS blocks it, go to **System Settings → Privacy & Security** and choose **Open Anyway** for Donvis. Do this only after checking where you downloaded the installer.
 
-The menu-bar title **rotates automatically** across every online client — `Claude Code CLI`, `Codex VSCode`, `Claude Desktop`, `Codex CLI`, and so on — each shown with its own `5h / 7d` progress bars and percentages, with a 3D page-flip animation between them. Prefer a fixed view? Pin it to a single client or switch manually in Settings.
+**First connection:** Quota needs a working Codex sign-in and network access. Local statistics need time to scan existing logs. Empty, incomplete, and older readings have their own indicators; they do not mean zero usage. Donvis displays the quota windows the account supplies, rather than filling in a fixed “5-hour / 7-day” pair.
 
-### 🪟 One-click overview popup
+## Feature tour
 
-<p align="center"><img src="assets/popover.gif" width="630" alt="One-click overview popup"></p>
+### A quota check within reach
 
-Click the menu-bar icon for a **card-style overview** that shows everything at once:
+Keep the workspace out of the way while you code. Click the menu-bar icon to see quota, the reset countdown, and data freshness, or switch between remaining and used quota. Low-quota alerts use thresholds you can adjust in Settings and require system notification permission.
 
-- Current client name and connection status (connected / waiting)
-- Source label (account login · official client / VSCode extension), account email, subscription tier
-- A "shared quota" note when multiple clients use the same account
-- `5-hour` and `7-day` remaining percentages, reset times, and last-updated time
-- A clear warning when Claude does not return fresh usage and Donvis is showing the last valid reading
-- Codex and Claude clients grouped separately, never interleaved
-- Quick actions at the bottom: Refresh / Settings / Quit
+Open the main window from the menu bar or Dock when you want the full picture. Closing the window keeps Donvis running in the menu bar; quitting stops monitoring and alerts.
 
-### ⚙️ Flexible settings
+### Follow the main session and its child agents
 
-<p align="center"><img src="assets/settings.gif" width="630" alt="Flexible settings"></p>
+![Expand a main session and its child agent to inspect models, reasoning effort, and token breakdowns](assets/v3.2.18/session-tour.gif)
 
-Tune the display to your workflow:
+[View the full still image](assets/v3.2.18/codex-sessions.png)
 
-- **Display mode**: Auto / Codex only / Claude only / multi-client rotation
-- **Rotation interval**: customize how fast the menu-bar title cycles
-- **Launch at login**: start automatically when you sign in
-- **Low-quota alerts**: get a system notification when remaining quota runs low
-- Menu-bar style and display preferences
+A task split across several agents needs more context than one token total. Donvis separates the main session from its child agents. Choose a time range, inspect models, clients, tools, and recognized `SKILL.md` reads, then expand a session for the details. Skill entries reflect those recognized reads, not a complete record of skill execution.
 
-### 🧰 Dock fallback entry
+- See the model and reasoning effort associated with a session’s work.
+- Separate uncached input, cache reads, cache writes, and output. Reasoning tokens are part of output and are not added a second time.
+- Distinguish the main session’s own usage from child-agent totals, keeping shared and derived records in context.
 
-<p align="center"><img src="assets/dock.gif" width="100%" alt="Dock fallback entry"></p>
+The Codex view also brings together recent main-session context usage, the working-time calendar, and performance from local logs. Elapsed time can include tool execution and waiting, so these records help explain your work rather than rank model speed.
 
-When macOS hides the menu-bar icon for lack of space, open the same status window straight from the **Dock icon** — current quota, account info, source, and settings, identical to the menu-bar popup.
+Working time uses task-running intervals recognized in the logs. It merges overlapping intervals across parallel main sessions, measuring recorded task runtime rather than a person’s hours worked.
 
-## 🔒 Privacy first
+### Put the remaining quota in context
 
-Donvis only reads the minimum needed to display your quota, and **never touches your code or conversations**:
+![Quota history with observed consumption, usage pace, and guidance](assets/v3.2.18/quota-history.png)
 
-- Does not scrape web cookies.
-- Does not scrape Claude Desktop cookies or inject into private web sessions.
-- Does not read plaintext API keys from your IDE.
-- Does not upload any quota, account, or local configuration data.
-- Does not store prompts, model responses, code, or file contents.
+“40% left” and “how long it might last at this pace” answer different questions. The history view places recorded samples, recent consumption, estimated remaining time, and the next reset together, helping you decide whether to keep the current schedule or adjust it.
 
-## 📦 Download & Install
+History comes from samples already recorded. Limited samples, a window reset, or a gap in the record can restrict forecasts. Model and reasoning-effort comparisons also need enough completed tasks. Work on other devices, task difficulty, and cache hits can all change the actual outcome.
 
-| Chip | Installer |
+When the account supplies them, resource cards show balances, credits, reset-card counts, and expiry dates. The reset action opens the official page; confirming that you used a card marks local history. Donvis does not redeem reset cards automatically.
+
+### Go from the total to the session
+
+![Local usage view with token composition, activity, and session statistics](assets/v3.2.18/usage.png)
+
+Explore which project used the most today, which model read more cached tokens, and which sessions account for the larger share. Date filters, the activity calendar, session details, and exports let you review the same slice of local work.
+
+**Cost display is optional.** Enter model prices to set your API reference rates, then enable cost estimates when you want to show them in the workspace. Records without a price remain unpriced. These estimates are separate from a Codex subscription bill or an actual charge.
+
+JSON and CSV exports make further analysis possible. They contain statistics such as project names, models, anonymous session identifiers, and token counts. Saved valid prices can also produce `estimatedUSD` values in exports even when cost display is off. Check the contents before sharing them.
+
+Total tokens cannot be directly converted into a subscription quota percentage. Quota and local statistics follow different paths:
+
+```mermaid
+flowchart LR
+  Q["Codex account quota"] --> R["Remaining quota / reset"] --> P["Quota trend and pace"]
+  L["Logs on this Mac"] --> S["Main / child sessions"] --> T["Token mix and task working time"]
+```
+
+## Data and privacy
+
+Different views use different sources. Use these boundaries to decide which features you want enabled:
+
+| Information | Source and scope |
 | --- | --- |
-| Apple Silicon (M-series) | [Donvis-1.7.0-macOS-arm64.dmg](macOS/Donvis-1.7.0-macOS-arm64.dmg) |
-| Intel Mac | [Donvis-1.7.0-macOS-x86_64.dmg](macOS/Donvis-1.7.0-macOS-x86_64.dmg) |
+| Account quota, reset times, and account resources | Read through Codex app-server using the existing sign-in. Refreshing makes network requests; available fields depend on what the account returns. |
+| Tokens, models, projects, and session statistics | Built from logs on this Mac, not account-wide usage across every device. Missing records, an unfinished scan, or format changes affect coverage. |
+| Session details and performance | Some details read local session titles or opening prompts to identify the task. |
+| API reference costs | Calculated using model prices you save. Workspace visibility and export calculations are separate: saved valid prices can produce `estimatedUSD` even with cost display off. These estimates are not provider invoices and do not create charges. |
+| JSON and CSV exports | Statistical exports omit conversation bodies, account identifiers, and secrets, but include work information such as project names and any calculated cost estimates. |
+| LAN snapshots | Enabled by default on port `4100`. Devices on the same network can read snapshots without authentication. They can include account labels, client information, and the device name, but not conversation bodies or secrets. Turn this off in **Settings → iPhone and LAN** if you do not need it. |
+| iCloud | The downloadable ad-hoc build has no iCloud entitlement and cannot synchronize through iCloud. |
 
-Pick the installer matching your Mac's chip — both builds are functionally identical.
+## FAQ
 
-**Steps:**
+**Why do I only see one quota window?**
 
-1. Download and open the DMG, then drag `Donvis.app` into Applications.
-2. If Gatekeeper blocks the first launch (the build is ad-hoc signed and not Apple-notarized): right-click the app → **Open**, or go to **System Settings → Privacy & Security** and click **Open Anyway**.
-3. Alternatively, run `xattr -dr com.apple.quarantine /Applications/Donvis.app` in Terminal, then launch.
+Donvis shows the windows the account returns. An account may return only one period, and its duration is not necessarily five hours or seven days.
 
-> A Windows build is not yet available; it will land in [`Windows/`](Windows/) in a future release.
+**Why does the account still appear after I close a Codex client?**
 
-## 💻 Requirements
+A running client and a connected account are different states. Several clients can share the same account quota; closing one does not increase or clear that allowance.
 
-- macOS 13 Ventura or later
-- Apple Silicon or Intel Mac
-- For Codex: Codex Desktop, Codex CLI, or the official VSCode extension installed
-- For Claude Code: Claude Desktop or Claude Code CLI installed and signed in
+**Why is the history or usage view incomplete when I first open it?**
 
-## 📄 License
+Quota history accumulates samples over time, while local statistics need to scan existing logs. Check the update time, scan progress, and missing-record indicators on the page.
 
-[MIT License](LICENSE)
+**Can Donvis switch models, control agents, or buy quota?**
+
+This release is for observation and analysis. It does not change models in external clients, send tasks, buy quota, or redeem reset cards.
+
+**Which Macs does it support?**
+
+The main app requires macOS 13 or later, with separate Apple Silicon and Intel installers. Both 3.2.18 builds and packages passed checks; the Intel package also passed CLI checks under Rosetta. Native Intel hardware and macOS 13 hardware have not been verified.
+
+## Feedback and license
+
+Found a problem or have an idea? [Open an issue](https://github.com/sherlockmen/Donvis/issues) with the Donvis version, macOS version, chip type, and steps to reproduce it. Remove account identifiers and private work information before posting screenshots or logs.
+
+[Download the latest release](https://github.com/sherlockmen/Donvis/releases/latest) · [Earlier releases](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
