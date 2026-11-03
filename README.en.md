@@ -20,7 +20,7 @@
 
 </div>
 
-![Donvis 3.2.18 overview with Codex quota, account resources, and daily usage](assets/v3.2.18/overview.png)
+![Donvis 3.2.18 overview with Codex quota, reset countdown, and daily token usage](assets/v3.2.18/overview.png)
 
 > Captured from the running macOS app using real local records. Identifying details are redacted; usage values are unchanged and reflect the time of capture. Account resources depend on what the service returns.
 
@@ -82,13 +82,15 @@ When the account supplies them, resource cards show balances, credits, reset-car
 
 ### Go from the total to the session
 
-![Local usage view with token composition, activity, and session statistics](assets/v3.2.18/usage.png)
+![Seven days of real token usage with uncached input, cache reads, and output](assets/v3.2.18/usage.png)
 
 Explore which project used the most today, which model read more cached tokens, and which sessions account for the larger share. Date filters, the activity calendar, session details, and exports let you review the same slice of local work.
 
 **Cost display is optional.** Enter model prices to set your API reference rates, then enable cost estimates when you want to show them in the workspace. Records without a price remain unpriced. These estimates are separate from a Codex subscription bill or an actual charge.
 
 JSON and CSV exports make further analysis possible. They contain statistics such as project names, models, anonymous session identifiers, and token counts. Saved valid prices can also produce `estimatedUSD` values in exports even when cost display is off. Check the contents before sharing them.
+
+## Data and privacy
 
 Total tokens cannot be directly converted into a subscription quota percentage. Quota and local statistics follow different paths:
 
@@ -97,8 +99,6 @@ flowchart LR
   Q["Codex account quota"] --> R["Remaining quota / reset"] --> P["Quota trend and pace"]
   L["Logs on this Mac"] --> S["Main / child sessions"] --> T["Token mix and task working time"]
 ```
-
-## Data and privacy
 
 Different views use different sources. Use these boundaries to decide which features you want enabled:
 
