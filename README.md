@@ -9,12 +9,12 @@
 <p>菜单栏里掌握余量，工作台里拆开主会话与子 Agent。<br>不必翻日志，就能找到高消耗会话、回看耗时任务，安排下一段工作。</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
 </p>
 
-<p>v3.2.19 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.19">发行说明与校验值</a></p>
+<p>v3.2.20 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.20">发行说明与校验值</a></p>
 
 <p><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 
@@ -141,7 +141,7 @@
 
 ## 开始使用
 
-1. **选对安装包。** [Apple Silicon](https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg) 适用于 M 系列 Mac；[Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg) 适用于 Intel Mac。打开 DMG，把 `Donvis.app` 拖入“应用程序”。
+1. **选对安装包。** [Apple Silicon](https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-arm64.dmg) 适用于 M 系列 Mac；[Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-x86_64.dmg) 适用于 Intel Mac。打开 DMG，把 `Donvis.app` 拖入“应用程序”。
 2. **使用已有 Codex 登录。** 先安装并登录 Codex Desktop 或 Codex CLI，再打开 Donvis；“已接入工具”查看客户端识别情况。
 3. **等真实数据就绪。** 额度读取需要网络和可用登录；本机统计首次需要扫描日志。页面会显示更新时间、扫描进度和缺失状态。
 4. **按你的习惯设置。** 调整剩余 / 已用展示、低额度提醒与全局快捷键。无需局域网访问时，在“设置 → iPhone 与局域网”关闭快照服务。

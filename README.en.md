@@ -9,12 +9,12 @@
 <p>Check remaining quota in the menu bar. Explore main sessions and child agents in the workspace.<br>Find high-usage sessions, revisit slow tasks, and plan your next stretch of work without digging through logs.</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
 </p>
 
-<p>v3.2.19 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.19">Release notes and checksums</a></p>
+<p>v3.2.20 · macOS 13+ · <a href="https://github.com/sherlockmen/Donvis/releases/tag/v3.2.20">Release notes and checksums</a></p>
 
 <p><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
@@ -141,7 +141,7 @@ The icon reflects recorded task state and settings; it is not a progress indicat
 
 ## Get started
 
-1. **Choose your installer.** [Apple Silicon](https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-arm64.dmg) is for M-series Macs; [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.19/Donvis-3.2.19-macOS-x86_64.dmg) is for Intel Macs. Open the DMG and drag `Donvis.app` into Applications.
+1. **Choose your installer.** [Apple Silicon](https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-arm64.dmg) is for M-series Macs; [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.20/Donvis-3.2.20-macOS-x86_64.dmg) is for Intel Macs. Open the DMG and drag `Donvis.app` into Applications.
 2. **Use your existing Codex sign-in.** Install and sign in to Codex Desktop or Codex CLI before opening Donvis. Check “Connected Tools” for client detection.
 3. **Let real data become ready.** Quota reads need a working sign-in and network access. Local statistics need an initial log scan. Pages show update times, scan progress, and missing-data states.
 4. **Make it fit your routine.** Adjust remaining or used quota display, low-quota alerts, and global shortcuts. If you do not need LAN access, turn off the snapshot service under Settings → iPhone & Local Network.
