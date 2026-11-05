@@ -41,12 +41,14 @@
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working.gif" width="56" alt="Working icon for low or unrecognized reasoning effort"><br><strong>Low / Default</strong><br><sub>An easy pace</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-medium.gif" width="56" alt="Blue Medium working icon"><br><strong>Medium</strong><br><sub>A blue beat</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-high.gif" width="56" alt="Purple High working icon"><br><strong>High</strong><br><sub>Purple in motion</sub></td>
-<td align="center"><img src="assets/v3.2.21/menubar/openai-working-xhigh.gif" width="56" alt="Orange XHigh working icon"><br><strong>XHigh</strong><br><sub>An orange pulse</sub></td>
 </tr>
 <tr>
+<td align="center"><img src="assets/v3.2.21/menubar/openai-working-xhigh.gif" width="56" alt="Orange XHigh working icon"><br><strong>XHigh</strong><br><sub>An orange pulse</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-max.gif" width="56" alt="Rose Max working icon"><br><strong>Max</strong><br><sub>A quicker spin</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-ultra.gif" width="56" alt="Gold Ultra working icon"><br><strong>Ultra</strong><br><sub>A golden rhythm</sub></td>
-<td align="center" colspan="2"><img src="assets/v3.2.21/menubar/openai-working-priorityUltra.gif" width="56" alt="Black and gold working icon for Ultra with faster usage"><br><strong>Ultra + faster usage</strong><br><sub>Black and gold, full tempo</sub></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><img src="assets/v3.2.21/menubar/openai-working-priorityUltra.gif" width="56" alt="Black and gold working icon for Ultra with faster usage"><br><strong>Ultra + faster usage</strong><br><sub>Black and gold, full tempo</sub></td>
 </tr>
 </table>
 

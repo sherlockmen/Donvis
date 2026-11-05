@@ -41,12 +41,14 @@
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working.gif" width="56" alt="低强度或未知强度的工作图标"><br><strong>Low / 默认</strong><br><sub>从容起步</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-medium.gif" width="56" alt="蓝色 Medium 工作图标"><br><strong>Medium</strong><br><sub>蓝色节拍</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-high.gif" width="56" alt="紫色 High 工作图标"><br><strong>High</strong><br><sub>紫色加速</sub></td>
-<td align="center"><img src="assets/v3.2.21/menubar/openai-working-xhigh.gif" width="56" alt="橙色 XHigh 工作图标"><br><strong>XHigh</strong><br><sub>橙色跃动</sub></td>
 </tr>
 <tr>
+<td align="center"><img src="assets/v3.2.21/menubar/openai-working-xhigh.gif" width="56" alt="橙色 XHigh 工作图标"><br><strong>XHigh</strong><br><sub>橙色跃动</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-max.gif" width="56" alt="粉色 Max 工作图标"><br><strong>Max</strong><br><sub>粉色疾转</sub></td>
 <td align="center"><img src="assets/v3.2.21/menubar/openai-working-ultra.gif" width="56" alt="金色 Ultra 工作图标"><br><strong>Ultra</strong><br><sub>金色高档</sub></td>
-<td align="center" colspan="2"><img src="assets/v3.2.21/menubar/openai-working-priorityUltra.gif" width="56" alt="黑金 Ultra 加 faster usage 工作图标"><br><strong>Ultra + faster usage</strong><br><sub>黑金快节奏</sub></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><img src="assets/v3.2.21/menubar/openai-working-priorityUltra.gif" width="56" alt="黑金 Ultra 加 faster usage 工作图标"><br><strong>Ultra + faster usage</strong><br><sub>黑金快节奏</sub></td>
 </tr>
 </table>
 
