@@ -9,12 +9,12 @@
 <p>还剩多少额度，哪个 Agent 在忙，时间和 Token 花到了哪里。<br>抬眼看现状，点开追原因，下一段工作更有数。</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.21/Donvis-3.2.21-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.22/Donvis-3.2.22-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.21/Donvis-3.2.21-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.22/Donvis-3.2.22-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
 </p>
 
-<p>v3.2.21 · macOS 13+ · 免费下载 · 沿用 Codex 登录</p>
+<p>v3.2.22 · macOS 13+ · 免费下载 · 沿用 Codex 登录</p>
 
 <p><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 
@@ -153,7 +153,7 @@
 
 ## 让 Donvis 住进你的菜单栏
 
-1. **下载并安装。** 选择 [Apple Silicon / M 系列](https://github.com/sherlockmen/Donvis/releases/download/v3.2.21/Donvis-3.2.21-macOS-arm64.dmg) 或 [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.21/Donvis-3.2.21-macOS-x86_64.dmg)，打开 DMG，将 `Donvis.app` 拖进“应用程序”。
+1. **下载并安装。** 选择 [Apple Silicon / M 系列](https://github.com/sherlockmen/Donvis/releases/download/v3.2.22/Donvis-3.2.22-macOS-arm64.dmg) 或 [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.22/Donvis-3.2.22-macOS-x86_64.dmg)，打开 DMG，将 `Donvis.app` 拖进“应用程序”。
 2. **沿用 Codex 登录。** 先安装并登录 Codex Desktop 或 Codex CLI，再打开 Donvis。“已接入工具”可确认客户端识别。
 3. **让第一份数据就位。** 额度需要网络和有效登录；本机统计首次扫描日志，曲线随后积累。调整展示、提醒与快捷键，就能开始。
 
@@ -177,4 +177,4 @@
 
 </details>
 
-[发行说明](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.21) · [反馈问题](https://github.com/sherlockmen/Donvis/issues) · [历史版本](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
+[发行说明](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.22) · [反馈问题](https://github.com/sherlockmen/Donvis/issues) · [历史版本](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
