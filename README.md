@@ -9,12 +9,12 @@
 <p>还剩多少额度，哪个 Agent 在忙，时间和 Token 花到了哪里。<br>抬眼看现状，点开追原因，下一段工作更有数。</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-arm64.dmg"><strong>下载 Apple Silicon 版</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-x86_64.dmg"><strong>下载 Intel 版</strong></a>
 </p>
 
-<p>v3.2.24 · macOS 13+ · 免费下载 · 沿用 Codex 登录</p>
+<p>v3.2.25 · macOS 13+ · 免费下载 · 沿用 Codex 登录</p>
 
 <p><strong>简体中文</strong> · <a href="README.en.md">English</a></p>
 
@@ -116,6 +116,7 @@
 
 - **主会话与子 Agent 分开分析。** 今天 / 7 天 / 30 天自由切换，会话分析可前后翻时段；主会话看用户消息，子 Agent 看独立模型响应，辅助执行另列。汇总指标可展开会话、Agent、模型与项目名单，列表支持按标题搜索、继续加载。
 - **Token 拆得清楚。** 缓存读取与未缓存输入分别呈现，推理是输出的一部分，不重复计入总量；推理 / 普通输出构成、已记录任务的推理强度时长占比与 faster usage 分开查看。
+- **任务进行中，也能看占比。** 推理强度与 faster usage 的时长占比包含进行中的任务，计至最近采样；已结束和已中止任务按结束记录累计。并行任务分别计时，无法核对的配置单列“未确认”。
 - **数字也交代覆盖。** 首 Token 等待和完整轮耗时摘要基于正常完成样本，悬停查看中位数、P95、有效样本、预期轮数与覆盖率；失败次数、失败率和任务停止分别统计。
 - **图上的一根柱，能追到任务。** 当天按发生时间画已计时任务，标题与可读取首问帮助辨认，拖范围滑块缩放；7 天 / 30 天看日总耗时或平均耗时。压缩事件单独计时，多日可看每日压缩耗时占比。
 - **工具不止一个名字。** 调用次数、完整计时的累计耗时、命令族、近期主要操作与最近会话线索一起看，分页继续查。模型 / 使用端可比较消息活动，技能排行展示识别到的 SKILL.md 读取请求。
@@ -153,7 +154,7 @@
 
 ## 让 Donvis 住进你的菜单栏
 
-1. **下载并安装。** 选择 [Apple Silicon / M 系列](https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-arm64.dmg) 或 [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-x86_64.dmg)，打开 DMG，将 `Donvis.app` 拖进“应用程序”。
+1. **下载并安装。** 选择 [Apple Silicon / M 系列](https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-arm64.dmg) 或 [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-x86_64.dmg)，打开 DMG，将 `Donvis.app` 拖进“应用程序”。
 2. **沿用 Codex 登录。** 先安装并登录 Codex Desktop 或 Codex CLI，再打开 Donvis。“已接入工具”可确认客户端识别。
 3. **让第一份数据就位。** 额度需要网络和有效登录；本机统计首次扫描日志，曲线随后积累。调整展示、提醒与快捷键，就能开始。
 
@@ -177,4 +178,4 @@
 
 </details>
 
-[发行说明](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.24) · [反馈问题](https://github.com/sherlockmen/Donvis/issues) · [历史版本](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
+[发行说明](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.25) · [反馈问题](https://github.com/sherlockmen/Donvis/issues) · [历史版本](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)

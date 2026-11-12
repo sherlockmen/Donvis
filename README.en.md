@@ -9,12 +9,12 @@
 <p>Quota left. Agents at work. Where the time and Tokens went.<br>A glance to check in. A click to follow the details.</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
 </p>
 
-<p>v3.2.24 · macOS 13+ · Free download · Uses your Codex sign-in</p>
+<p>v3.2.25 · macOS 13+ · Free download · Uses your Codex sign-in</p>
 
 <p><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
@@ -116,6 +116,7 @@ Inspect input, cache reads, cache writes where recorded, output, and reasoning. 
 
 - **Separate main sessions from child Agents.** Choose today, seven days, or 30 days, and move between historical periods in session analysis. Main-session scope counts user messages; child-Agent scope counts distinct model responses. Auxiliary execution is listed separately. Summary metrics reveal session, Agent, model, and project lists, with title search and more records to load.
 - **Keep Token ownership clear.** Cache reads and uncached input have separate places. Reasoning is part of output and is not added twice. Inspect reasoning / regular-output composition, recorded task-duration shares by reasoning effort, and faster usage separately.
+- **See duration shares while tasks run.** Reasoning-effort and faster-usage shares include tasks in progress, up to the latest sample. Completed and aborted tasks use their recorded end times. Parallel tasks accumulate separately, and unverified settings stay in an unconfirmed category.
 - **See the coverage behind the number.** First-Token and full-turn summaries use successful completions. Hover for medians, P95, valid samples, expected turns, and coverage. Failure counts, failure rates, and stopped tasks are tracked separately.
 - **Follow a bar to a task.** Today's timed tasks appear in occurrence order, with titles and available opening-message excerpts to help identify them. Drag the range slider to zoom in. Seven-day / 30-day views offer daily totals or average task duration. Compactions have separate timings, with daily compaction-duration shares in longer views.
 - **Go beyond a tool name.** Check call counts, cumulative duration for fully timed executions, command families, recent main operations, and clues from recent sessions. Page through more tools. Compare message activity by model / client, and inspect detected SKILL.md read requests in skill rankings.
@@ -153,7 +154,7 @@ Work time merges recognized task intervals. Idle includes unobserved periods, so
 
 ## Make room for Donvis in your menu bar
 
-1. **Download and install.** Choose [Apple Silicon / M-series](https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-arm64.dmg) or [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.24/Donvis-3.2.24-macOS-x86_64.dmg). Open the DMG and drag `Donvis.app` into Applications.
+1. **Download and install.** Choose [Apple Silicon / M-series](https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-arm64.dmg) or [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.25/Donvis-3.2.25-macOS-x86_64.dmg). Open the DMG and drag `Donvis.app` into Applications.
 2. **Use your Codex sign-in.** Install and sign in to Codex Desktop or Codex CLI first, then open Donvis. “Connected tools” confirms client detection.
 3. **Let the first data arrive.** Quota needs a network connection and valid sign-in. The first local scan reads your logs; history builds over time. Set your preferred display, alerts, and shortcuts, and get started.
 
@@ -177,4 +178,4 @@ App views come from running Donvis instances. Recorded values are unchanged, and
 
 </details>
 
-[Release notes](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.24) · [Report an issue](https://github.com/sherlockmen/Donvis/issues) · [Past releases](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
+[Release notes](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.25) · [Report an issue](https://github.com/sherlockmen/Donvis/issues) · [Past releases](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
