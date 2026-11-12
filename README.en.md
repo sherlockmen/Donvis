@@ -9,12 +9,12 @@
 <p>Quota left. Agents at work. Where the time and Tokens went.<br>A glance to check in. A click to follow the details.</p>
 
 <p>
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.26/Donvis-3.2.26-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.27/Donvis-3.2.27-macOS-arm64.dmg"><strong>Download for Apple Silicon</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.26/Donvis-3.2.26-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
+  <a href="https://github.com/sherlockmen/Donvis/releases/download/v3.2.27/Donvis-3.2.27-macOS-x86_64.dmg"><strong>Download for Intel</strong></a>
 </p>
 
-<p>v3.2.26 · macOS 13+ · Free download · Uses your Codex sign-in</p>
+<p>v3.2.27 · macOS 13+ · Free download · Uses your Codex sign-in</p>
 
 <p><a href="README.md">简体中文</a> · <strong>English</strong></p>
 
@@ -154,7 +154,7 @@ Work time merges recognized task intervals. Idle includes unobserved periods, so
 
 ## Make room for Donvis in your menu bar
 
-1. **Download and install.** Choose [Apple Silicon / M-series](https://github.com/sherlockmen/Donvis/releases/download/v3.2.26/Donvis-3.2.26-macOS-arm64.dmg) or [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.26/Donvis-3.2.26-macOS-x86_64.dmg). Open the DMG and drag `Donvis.app` into Applications.
+1. **Download and install.** Choose [Apple Silicon / M-series](https://github.com/sherlockmen/Donvis/releases/download/v3.2.27/Donvis-3.2.27-macOS-arm64.dmg) or [Intel](https://github.com/sherlockmen/Donvis/releases/download/v3.2.27/Donvis-3.2.27-macOS-x86_64.dmg). Open the DMG and drag `Donvis.app` into Applications.
 2. **Use your Codex sign-in.** Install and sign in to Codex Desktop or Codex CLI first, then open Donvis. “Connected tools” confirms client detection.
 3. **Let the first data arrive.** Quota needs a network connection and valid sign-in. The first local scan reads your logs; history builds over time. Set your preferred display, alerts, and shortcuts, and get started.
 
@@ -178,4 +178,4 @@ App views come from running Donvis instances. Recorded values are unchanged, and
 
 </details>
 
-[Release notes](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.26) · [Report an issue](https://github.com/sherlockmen/Donvis/issues) · [Past releases](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
+[Release notes](https://github.com/sherlockmen/Donvis/releases/tag/v3.2.27) · [Report an issue](https://github.com/sherlockmen/Donvis/issues) · [Past releases](https://github.com/sherlockmen/Donvis/releases) · [MIT License](LICENSE)
